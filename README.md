@@ -1,3 +1,3 @@
 # EggHead-React
 
-let start
+Let start
