@@ -19,21 +19,23 @@ class App extends React.Component {
 		})
 	}
 	render(){
-		return (
-			<div>
-				<Slider ref="red"update={this.update} />
-				{this.state.red}
-				<br />
-				<Slider ref="green" update={this.update} />
-				{this.state.green}
-				<br />
-				<Slider ref="blue" update={this.update} />
-				{this.state.blue}
-				<br />
-				<hr />
-				<Widget txt={this.state.txt} update={this.update} />
-			</div>
-		);
+		return 	<Button> I <Heart/> React </Button>
+		// (
+		// 	<div>
+		// 		<hr />
+		// 		<Slider ref="red"update={this.update} />
+		// 		{this.state.red}
+		// 		<br />
+		// 		<Slider ref="green" update={this.update} />
+		// 		{this.state.green}
+		// 		<br />
+		// 		<Slider ref="blue" update={this.update} />
+		// 		{this.state.blue}
+		// 		<br />
+		// 		<hr />
+		// 		<Widget txt={this.state.txt} update={this.update} />
+		// 	</div>
+		// );
 	}
 }
 class Slider extends React.Component {
@@ -57,6 +59,16 @@ class Widget extends React.Component {
 				<h1>{this.props.txt}</h1>
 			</div>
 		)
+	}
+}
+class Button extends React.Component {
+	render() {
+		return <button>{this.props.children}</button>
+	}
+}
+class Heart extends React.Component {
+	render() {
+		return <span className="glyphicon glyphicon-heart">sssss</span>
 	}
 }
 // const Widget = (props) => {
